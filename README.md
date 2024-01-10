@@ -29,11 +29,10 @@ Gal Jeza
 ---
 # Room Persistence Library
 
-Room je del Android Jetpack in predstavlja abstrakcijski sloj nad SQLite, ki omogoča boljšo integracijo podatkovne baze v Android aplikacije. Zagotavlja več ključnih funkcionalnosti, ki poenostavijo delo z lokalnimi podatkovnimi bazami v Androidu.
+Room je del Android Jetpack in predstavlja abstrakcijski sloj nad SQLite, ki omogoča boljšo in bolj varno integracijo lokalne podatkovne baze v Android aplikacije. 
 
 ## Zakaj Uporabiti Room?
 
-Room zagotavlja abstrakcijski sloj nad SQLite, ki omogoča boljše delovanje s podatkovnimi bazami v Android aplikacijah. 
 
 ### Prednosti
 - **Preverjanje napak**: Zmanjša možnost napak, saj Room preveri SQL poizvedbe in sheme podatkovnih baz že med prevajanjem aplikacije.
