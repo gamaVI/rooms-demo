@@ -42,7 +42,6 @@ Room je del Android Jetpack in predstavlja abstrakcijski sloj nad SQLite, ki omo
 | **Enostavna Migracija** | Olajša proces migracije in posodabljanja shem podatkovnih baz. |
 
 ## Uporaba
-Room je zasnovan za enostavno uporabo in integracijo v vašo Android aplikacijo, zagotavlja učinkovito delo s podatkovnimi bazami, in zmanjšuje potrebno količino kodiranja.
 
 ### Definiranje Entitet
 
@@ -179,7 +178,7 @@ Room je del Android Jetpacka in je na voljo pod [Apache License 2.0](https://www
 Kot del Android Jetpacka ima Room veliko uporabnikov a natančno število ni znano.
 
 ### Vzdrževanje Projekta
-- **Število Razvijalcev**: Vzdržuje ga ekipa razvijalcev pri Googlu kot del večjega Android ekosistema.
+- **Število Razvijalcev**: Vzdržuje ga ekipa razvijalcev pri Googlu kot del Android ekosistema.
 - **Zadnji Popravek**: : 29. november 2023, verzija 2.6.1, Za najnovejše informacije o popravkih lahko obiščemo: [uradno stran projekta](https://developer.android.com/jetpack/androidx/releases/room).
 
 
