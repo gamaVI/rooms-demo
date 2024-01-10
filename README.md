@@ -31,15 +31,21 @@ Gal Jeza
 
 Room je del Android Jetpack in predstavlja abstrakcijski sloj nad SQLite, ki omogoča boljšo integracijo podatkovne baze v Android aplikacije. Zagotavlja več ključnih funkcionalnosti, ki poenostavijo delo z lokalnimi podatkovnimi bazami v Androidu.
 
-## Ključne Značilnosti
+## Zakaj Uporabiti Room?
 
-| Značilnost | Opis |
-|------------|------|
-| **Preverjanje Časa Prevajanja** | Room preverja SQL poizvedbe in sheme podatkovnih baz v času prevajanja aplikacije, kar zmanjšuje napake pri delu s podatkovnimi bazami. |
-| **Manj Kodiranja** | Uporablja anotacije za označevanje entitet in stolpcev, avtomatizira ustvarjanje kode, ki bi jo sicer morali pisati ročno. |
-| **ORM Podpora** | Omogoča enostavno shranjevanje in pridobivanje podatkovnih objektov iz podatkovne baze z minimalno uporabo SQL poizvedb. |
-| **LiveData Integracija** | Podpira LiveData za avtomatsko opazovanje sprememb v podatkovni bazi in posodobitev UI. |
-| **Enostavna Migracija** | Olajša proces migracije in posodabljanja shem podatkovnih baz. |
+Room zagotavlja abstrakcijski sloj nad SQLite, ki omogoča boljše delovanje s podatkovnimi bazami v Android aplikacijah. 
+
+### Prednosti
+- **Preverjanje napak**: Zmanjša možnost napak, saj Room preveri SQL poizvedbe in sheme podatkovnih baz že med prevajanjem aplikacije.
+- **Manj Kodiranja**: Room uporablja anotacije, ki zmanjšajo potrebo po ročnem pisanju boilerplate kode.
+- **Podpora ORM**: Olajša shranjevanje in pridobivanje podatkovnih objektov iz podatkovne baze.
+- **LiveData Integracija**: Omogoča avtomatsko posodabljanje uporabniškega vmesnika ob spremembah v podatkovni bazi.
+
+### Slabosti
+- **Omejena Agilnost**: Manj fleksibilen za kompleksne poizvedbe v primerjavi z neposredno uporabo SQLite.
+- **Učna Krivulja**: Zahteva čas za učenje in razumevanje njegovih anotacij in API-jev.
+- **Omejena Podpora**: Podpira samo SQLite, kar omejuje možnosti uporabe drugih podatkovnih baz.
+- **Manjša zmogljivost**: Zaradi dodatne plasti abstrakcije je Room manj učinkovit kot neposredna uporaba SQLite.
 
 ## Uporaba
 
@@ -113,21 +119,7 @@ private fun loadCollections() {
 ![Database Inspector](https://i.imgur.com/Ir59raO.png)
  
 
-## Zakaj Uporabiti Room?
 
-Room zagotavlja abstrakcijski sloj nad SQLite, ki omogoča boljše delovanje s podatkovnimi bazami v Android aplikacijah. Uporaba Room-a prinaša več prednosti:
-
-### Prednosti
-- **Preverjanje Časa Prevajanja**: Zmanjša možnost napak, saj Room preveri SQL poizvedbe in sheme podatkovnih baz že med prevajanjem aplikacije.
-- **Manj Kodiranja**: Room uporablja anotacije, ki zmanjšajo potrebo po ročnem pisanju boilerplate kode.
-- **Podpora ORM**: Olajša shranjevanje in pridobivanje podatkovnih objektov iz podatkovne baze.
-- **LiveData Integracija**: Omogoča avtomatsko posodabljanje uporabniškega vmesnika ob spremembah v podatkovni bazi.
-
-### Slabosti
-- **Omejena Agilnost**: Manj fleksibilen za kompleksne poizvedbe v primerjavi z neposredno uporabo SQLite.
-- **Učna Krivulja**: Zahteva čas za učenje in razumevanje njegovih anotacij in API-jev.
-- **Omejena Podpora**: Podpira samo SQLite, kar omejuje možnosti uporabe drugih podatkovnih baz.
-- **Manjša zmogljivost**: Zaradi dodatne plasti abstrakcije je Room manj učinkovit kot neposredna uporaba SQLite.
 
 ### Licenca
 Room je del Android Jetpacka in je na voljo pod [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), ki je ena izmed najbolj liberalnih in odprtih licenc.
